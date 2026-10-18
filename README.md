@@ -537,7 +537,3 @@ Project repository: [AegisLend AI](https://github.com/Chiragmohite/AegisLend)
 No license has been specified here. Before distributing or accepting external contributions, add an appropriate `LICENSE` file and update this section to reflect the chosen license.
 
 ---
-
-\<p align="center">
-&#x20; \<strong>AegisLend AI — Building a more intelligent and security-conscious digital lending experience.\</strong>
-\</p>
