@@ -1,0 +1,19 @@
+name: aegislend-support
+services:
+  redis:
+    image: redis:7.4-alpine
+    ports: ["127.0.0.1:6379:6379"]
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: ["redis_data:/data"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  chroma:
+    image: chromadb/chroma:1.5.9
+    ports: ["127.0.0.1:8001:8000"]
+    volumes: ["chroma_data:/data"]
+volumes:
+  redis_data:
+  chroma_data:

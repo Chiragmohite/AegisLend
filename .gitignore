@@ -1,0 +1,46 @@
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend
+node_modules/
+dist/
+coverage/
+
+# Local data and logs
+var/
+*.joblib
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Model weights and large generated artifacts
+*.pt
+*.pth
+*.onnx
+
+# Private keys
+*.pem
+*.key
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local backup files
+*.bak
